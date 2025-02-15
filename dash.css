@@ -1,0 +1,137 @@
+*{
+   
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: rgb(21, 16, 54);
+    display: flex;
+}   
+.profile{
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+   gap: 20px;
+}
+
+.img-box{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+
+.menu {
+    padding: 20px;
+    width: 60px;
+    height: 100vh;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul {
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    background-color: rgba(250, 235, 215, 0.689);
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin: 13px;
+    padding : 15px;
+    border-radius: 8px;
+    transition: .5s;
+}
+ul li a:hover , .active, .data-info .box:hover , td:hover{
+    background-color: rgba(127, 255, 212, 0.165);
+}
+ul li a i{
+    font-size: 28px;
+}
+ul li a p{
+    font-size: 20px;
+}
+.log-out a{
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    background-color: red;
+}
+.content{
+    width: 100%;
+    background-color: rgb(61, 76, 87);
+}
+.title-info{
+    padding: 8px;
+    margin: 8px;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+
+}
+.data-info .box{
+    font-size: 30px;
+    height: 150px;
+    flex-basis: 150px;
+    background-color: rgb(22, 31, 28);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    border-radius: 8px ;
+
+}
+.data-info .box .data{
+    font-size: 20px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td , th{
+     height: 40px;
+     background-color: rgb(2, 30, 55);
+     border-radius: 8px;
+     text-transform: capitalize;
+}
+th{
+    background-color:rgba(97, 251, 200, 0.27);
+    
+}
+.price , .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: green;
+}
+.count{
+    background-color: gold;
+    color: black;
+}
